@@ -31,8 +31,6 @@ import { playlists } from '@/lib/data.ts'
             </SideMenuItem>
         </ul>
 
-        {
-            playlists.map((playlist) => <SideMenuCard playlist={playlist} />)
-        }
+        {playlists.map((playlist) => <SideMenuCard playlist={playlist} />)}
     </div>
 </nav>
