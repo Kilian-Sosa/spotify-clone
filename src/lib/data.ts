@@ -144,7 +144,7 @@ export const songs: Song[] = [
     "title": "Silent Rain",
     "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Lo-Fi Chill Session",
     "duration": "3:40"
   },
   {
@@ -153,7 +153,7 @@ export const songs: Song[] = [
     "title": "Lost Pages",
     "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Lo-Fi Chill Session",
     "duration": "3:20"
   },
   {
@@ -162,7 +162,7 @@ export const songs: Song[] = [
     "title": "Midnight Tales",
     "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Lo-Fi Chill Session",
     "duration": "3:50"
   },
   {
@@ -171,7 +171,7 @@ export const songs: Song[] = [
     "title": "City Lights",
     "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Lo-Fi Chill Session",
     "duration": "3:30"
   },
   {
@@ -180,7 +180,7 @@ export const songs: Song[] = [
     "title": "Night Drive",
     "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Lo-Fi Chill Session",
     "duration": "4:20"
   },
   {
@@ -234,7 +234,7 @@ export const songs: Song[] = [
     "title": "Lunar",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
     "artists": ["Tenno"],
-    "album": "Study Session",
+    "album": "Blue Note Study Time",
     "duration": "3:40"
   },
   {
@@ -243,7 +243,7 @@ export const songs: Song[] = [
     "title": "Go go go!",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
     "artists": ["Tenno"],
-    "album": "Study Session",
+    "album": "Blue Note Study Time",
     "duration": "3:20"
   },
   {
@@ -252,7 +252,7 @@ export const songs: Song[] = [
     "title": "Keep focus!",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
     "artists": ["Tenno"],
-    "album": "Study Session",
+    "album": "Blue Note Study Time",
     "duration": "2:40"
   },
   {
@@ -261,7 +261,7 @@ export const songs: Song[] = [
     "title": "JavaScript is the way",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
     "artists": ["Tenno"],
-    "album": "Study Session",
+    "album": "Blue Note Study Time",
     "duration": "3:10"
   },
   {
@@ -270,7 +270,7 @@ export const songs: Song[] = [
     "title": "No more TypeScript for me",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
     "artists": ["Tenno"],
-    "album": "Study Session",
+    "album": "Blue Note Study Time",
     "duration": "2:10"
   },
   {
@@ -279,7 +279,7 @@ export const songs: Song[] = [
     "title": "Moonlit Walk",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
+    "album": "Chau Saura Session",
     "duration": "3:12"
   },
   {
@@ -288,7 +288,7 @@ export const songs: Song[] = [
     "title": "Coffee Daze",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
+    "album": "Chau Saura Session",
     "duration": "4:07"
   },
   {
@@ -297,7 +297,7 @@ export const songs: Song[] = [
     "title": "Skyline Serenade",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
+    "album": "Chau Saura Session",
     "duration": "3:50"
   },
   {
@@ -306,7 +306,7 @@ export const songs: Song[] = [
     "title": "Urban Echoes",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
+    "album": "Chau Saura Session",
     "duration": "3:30"
   },
   {
@@ -315,7 +315,57 @@ export const songs: Song[] = [
     "title": "Night's End",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
+    "album": "Chau Saura Session",
     "duration": "4:20"
+  },
+  {
+    "id": 1,
+    "albumId": 6,
+    "title": "No more TypeScript for me",
+    "image":
+      "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["WFS"],
+    "album": "Like a Necessity",
+    "duration": "1:57"
+  },
+  {
+    "id": 2,
+    "albumId": 6,
+    "title": "Lunar",
+    "image":
+      "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["WFS", "Nadav Cohen"],
+    "album": "Like a Necessity",
+    "duration": "1:49"
+  },
+  {
+    "id": 3,
+    "albumId": 6,
+    "title": "Urban Echoes",
+    "image":
+      "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["Nadav Cohen"],
+    "album": "Like a Necessity",
+    "duration": "2:35"
+  },
+  {
+    "id": 4,
+    "albumId": 6,
+    "title": "Moonlit Walk",
+    "image":
+      "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["Nadav Cohen"],
+    "album": "Like a Necessity",
+    "duration": "2:49"
+  },
+  {
+    "id": 5,
+    "albumId": 6,
+    "title": "Night's End",
+    "image":
+      "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["Nadav Cohen"],
+    "album": "Like a Necessity",
+    "duration": "2:29"
   },
 ]
