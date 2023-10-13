@@ -1,5 +1,6 @@
 import { usePlayerStore } from '@/store/playerStore'
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useRef } from 'react'
+import { Slider } from './Slider'
 
 export const Pause = ({ className }) => (
     <svg className={className} role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.7 1a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7H2.7zm8 0a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg>
@@ -74,7 +75,16 @@ export function Player () {
             </div>
 
             <div className="grid place-content-center">
-                Volume...
+                <Slider 
+                    defaultValue={[100]}
+                    min={0}
+                    max={100}
+                    className="w-[95px]"
+                    onValueChange={(value) => {
+                        const [newVolume] = value
+                        audioRef.current.volume = newVolume / 100
+                    }
+                } />
             </div>
 
             <audio ref={audioRef} />
