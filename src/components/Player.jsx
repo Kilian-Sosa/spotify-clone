@@ -37,6 +37,27 @@ const CurrentSong = ({ image, title, artists }) => {
     )
 }
 
+const VolumeControl = () => {
+    const [volume, setVolume] = usePlayerStore(state => [state.volume, state.setVolume])
+
+    return (
+        <div className="flex justify-center gap-x-2 text-white">
+            {volume < 0.1 ? <VolumeSilence /> : <Volume />}
+            <Slider
+                defaultValue={[100]}
+                min={0}
+                max={100}
+                className="w-[95px]"
+                onValueChange={(value) => {
+                    const [newVolume] = value;
+                    const volumeValue = newVolume / 100;
+                    setVolume(newVolume);
+                }}
+            />
+        </div>
+    );
+}
+
 export function Player () {
     const { currentMusic, isPlaying, setIsPlaying } = usePlayerStore(state => state)
     const audioRef = useRef()
@@ -73,25 +94,13 @@ export function Player () {
                     <button className="bg-white rounded-full p-2" onClick={handleClick}>
                         {isPlaying ? <Pause /> : <Play />}
                     </button>
+                    <audio ref={audioRef} />
                 </div>
             </div>
 
             <div className="grid place-content-center">
-                <Slider 
-                    defaultValue={[100]}
-                    min={0}
-                    max={100}
-                    className="w-[95px]"
-                    onValueChange={(value) => {
-                        const [newVolume] = value
-                        const volumeValue = newVolume / 100
-                        volumeRef.current = volumeValue
-                        audioRef.current.volume = volumeValue
-                    }
-                } />
+                <VolumeControl />
             </div>
-
-            <audio ref={audioRef} />
         </div>
     )
 }
