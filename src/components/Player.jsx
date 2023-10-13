@@ -51,7 +51,7 @@ const VolumeControl = () => {
                 onValueChange={(value) => {
                     const [newVolume] = value;
                     const volumeValue = newVolume / 100;
-                    setVolume(newVolume);
+                    setVolume(volumeValue);
                 }}
             />
         </div>
@@ -59,9 +59,8 @@ const VolumeControl = () => {
 }
 
 export function Player () {
-    const { currentMusic, isPlaying, setIsPlaying } = usePlayerStore(state => state)
+    const { currentMusic, isPlaying, setIsPlaying, volume } = usePlayerStore(state => state)
     const audioRef = useRef()
-    const volumeRef = useRef(1)
 
     useEffect(() => {
         isPlaying
@@ -70,11 +69,15 @@ export function Player () {
     }, [isPlaying])
 
     useEffect(() => {
+        audioRef.current.volume = volume
+    }, [volume])
+
+    useEffect(() => {
         const { song, playlist, songs } = currentMusic
         if (song) {
             const src = `/music/${playlist?.id}/0${song.id}.mp3`
             audioRef.current.src = src
-            audioRef.current.volume = volumeRef.current
+            audioRef.current.volume = volume
             audioRef.current.play()
         }
     }, [currentMusic])
